@@ -215,6 +215,29 @@ body {
   margin-right: 8px;
 }
 
+.title2,
+.title {
+  position: relative;
+}
+.title2::before,
+.title::before {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 4rem;
+  border-radius: 50px;
+  transition: 0.1s width;
+}
+.title2::before {
+  background: #003147;
+}
+.title::before {
+  background: #ffffff;
+}
+
 /* <============ Responsiveness ============> */
 @media (max-width: 1000px) {
   .container {
